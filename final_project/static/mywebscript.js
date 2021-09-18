@@ -1,5 +1,8 @@
 let translateToFrench = ()=>{
     textToTranslate = document.getElementById("textToTranslate").value;
+    if (textToTranslate.length < 1){
+        textToTranslate = "none"
+    }
 
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -11,8 +14,11 @@ let translateToFrench = ()=>{
     xhttp.send();
 }
 
-let translateToEnglish = ()=>{
+let translateToEnglish = ()=>{    
     textToTranslate = document.getElementById("textToTranslate").value;
+    if (textToTranslate.length < 1){
+        textToTranslate = "none"
+    }
 
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
