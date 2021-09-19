@@ -1,5 +1,5 @@
 ---
 applications:
- - name: ibmlearner_translation_app
+ - name: pmdevsflasktranslator
    random-random: true
    memory: 64M

@@ -1,9 +1,10 @@
-import unittest
-#from machinetranslation.translator import english_to_french, french_to_english
-#from machinetranslation.translator import english_to_french, french_to_english
-from translator import english_to_french, french_to_english
-#import machinetranslation.translator
+import os, sys
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)
+sys.path.insert(0, parent_dir)
 
+import unittest
+from translator import english_to_french, french_to_english
 
 class TestMain(unittest.TestCase):
 
