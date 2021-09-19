@@ -20,13 +20,13 @@ class TestMain(unittest.TestCase):
 
     def test_EnglishToFrench_null(self):
         test_case = None
-        expected = "Type a text in English"
-        self.assertEqual(english_to_french(test_case), expected)
+        not_expected = None
+        self.assertNotEqual(english_to_french(test_case), not_expected)
 
     def test_FrenchToEnglish_null(self):
         test_case = None
-        expected = "Type a text in French"
-        self.assertEqual(french_to_english(test_case), expected)
+        not_expected = None
+        self.assertNotEqual(french_to_english(test_case), not_expected)
 
 
 if __name__ == '__main__':
